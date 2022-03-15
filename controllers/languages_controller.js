@@ -62,7 +62,7 @@ languages.get('/random', async (req, res) => {
       })
 })
 
-// SHOW
+// Show:
 languages.get('/:name', (req, res) => {
   Language.findOne({name: req.params.name.toLowerCase()})
       .then(foundLanguage => {
